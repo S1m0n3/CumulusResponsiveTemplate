@@ -1,0 +1,365 @@
+/* Reset.css */
+        html, body, div, span, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote,
+        abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+        small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section, summary,
+        time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline; font-family: 'Titillium Web', sans-serif; color: #fff;}
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {display: block; }
+        blockquote, q { quotes: none; }
+        blockquote:before, blockquote:after,
+        q:before, q:after { content: ""; content: none; }
+        .clearfix:before, .clearfix:after { content: ""; display: table; }
+        .clearfix:after { clear: both; }
+        .clearfix { zoom: 1; }
+        html {overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+		pre { font-family:monospace; }
+		
+	body {
+	    /* Location of the image */
+	    background-image: url(../img/background-image.png);
+	    
+	    /* Background image is centered vertically and horizontally at all times */
+	    background-position: center center;
+	    
+	    /* Background image doesn't tile */
+	    background-repeat: no-repeat;
+	    
+	    /* Background image is fixed in the viewport so that it doesn't move when 
+	       the content's height is greater than the image's height */
+	    background-attachment: fixed;
+	    
+	    /* This is what makes the background image rescale based
+	       on the container's size */
+	    background-size: cover;
+	    
+	    /* Set a background color that will be displayed
+	       while the background image is loading */
+	    background-color: #464646;
+	}
+        
+    #wrapper        {width: 960px;margin: 0 auto;/*background:#fff;*/}
+    #header         {width: 920px;float:left;padding: 20px 20px 20px 20px; text-align: center; /*background:#21aabd;*/}
+	#mainmenu       {width: 960px;float:left;/*background: #888;*/}
+	#main           {width: 920px;float:left;padding: 20px 20px 20px 20px; /*background:#777;*/ background-color: rgba(255,255,255,0.2); border-radius: 10px;}
+	#content        {width: 620px;float:left; }
+	#sidebar        {width: 270px;float:right;}
+	#footer         {width: 920px;float:left;padding: 30px 20px 10px 20px; text-align: center; /*background:#666;*/ }
+        
+        /*** Header ***/
+        #site-title a 		{font-family: 'Titillium Web', sans-serif; font-size:30px; text-decoration: none; text-transform:uppercase; color:#fff;}
+        #site-title a:hover 	{background: none;}
+
+
+        /*** Menu ***/
+        #menucentered { margin: 0 auto; text-align: center;}
+        
+        #menucentered ul 		{margin: 0px 0 0px 0px;width:100%; list-style: none; }
+        #menucentered ul li 	{margin: 0 0px 0 0;position: relative; text-align: center; display: inline-block;}
+        #menucentered a 		{color: #fff; display: block;font: 14px;padding: 14px 20px;font-family: oswald; text-transform:uppercase; text-decoration: none;}
+        #menucentered a:hover {background:#fff; color: #000;}
+
+        /** METEO ***/
+        #temperature {
+            width: 240px;
+            height: 100%;
+            margin: 0 auto;
+            /*background-color: yellow;*/
+            text-align: center;
+        }
+	
+	#temp-content {position: relative; height: 170px;}
+        
+	#icon-temp {
+	    
+	    width:22px;
+	    height:46px;
+	    background-image: url('../img/term.png');
+	    top: 10px;
+	    float: left;
+	    position: relative;
+	    left:30px;
+	    
+	}
+	
+	#temp-now {font-size: 38px;}
+	
+	#temp-min {float: left; font-size: 14px; position: relative; top: 20px; }
+	
+	#temp-max {float: right; font-size: 14px; position: relative; top: 20px; }
+	
+	#trend {
+	    
+	    width: 240px;
+	    height: 170px;
+            margin: 0 auto;
+	    text-align: center;
+	    
+	}
+	
+	#trend-icon {margin: 0 auto; width: 74px; height: 74px; margin-top:10px; }
+	
+	#trend-description {position: relative; top: 10px;}
+	
+	#misc-info {
+	    
+	    width: 240px;
+	    height: 100%;
+            margin: 0 auto;
+	    text-align: left;    
+	    
+	}
+	
+	#misc-content {top:10px; position: relative; height: 170px;}
+	
+	#wind {
+	
+	    width: 240px;
+	    height: 100%;
+            margin: 0 auto;
+	    /*border: 1px solid;
+	    border-color: #999;
+	    border-radius: 10px;*/
+	    text-align: left;
+	    
+	}
+	
+	#wind-content {top:10px; position: relative; height: 170px;}
+        
+	#webcam {
+	
+	    width: 100%;
+	    height: 100%;
+	    margin: 0 auto;
+	    /*border-color: #999;*/
+	    text-align: left;
+	    /*background-repeat: no-repeat;
+	    background-image: url('../img/webcam.jpg');
+	    background-size: 100% 250px;*/
+	    position: relative;
+	    top: 10px;
+	}
+	
+	#webcam-img { margin: 0 auto; height: 250px; width: 90%;}
+	
+	#rain {
+	
+	    width: 240px;
+	    height: 100%;
+	    margin: 0 auto;
+	    /*border: 1px solid;
+	    border-color: #999;
+	    border-radius: 10px;*/
+	    text-align: left;
+	    
+	}
+	
+	#rain-content {top:10px; position: relative; height: 170px;}
+	
+	
+    /** GRAFICI ***/
+        #anemometer {
+            width: 240px;
+            height: 200px;
+            margin: 0 auto;
+            /*background-color: yellow;*/
+            text-align: center;
+        }
+	
+	#windrose {
+	    
+	    width: 240px;
+	    height: 200px;
+            margin: 0 auto;
+	    text-align: center;
+	    
+	}
+		
+	#compass {
+	    
+	    width: 240px;
+	    height: 200px;
+            margin: 0 auto;
+	    text-align: center;    
+	    
+	}
+	
+	#wind-graphs {
+	
+	    width: 100%;
+	    height: 100%;
+            margin: 0 auto;
+	    /*border: 1px solid;
+	    border-color: #999;
+	    border-radius: 10px;*/
+	    text-align: center;
+	    
+	}
+	
+	#wind-graphs-content {top:10px; position: relative;}
+        
+	#temp-graphs {
+	
+	    width: 100%;
+	    height: 100%;
+	    margin: 0 auto;
+	    /*border-color: #999;*/
+	    text-align: center;
+	    /*background-repeat: no-repeat;
+	    background-image: url('../img/webcam.jpg');
+	    background-size: 100% 250px;*/
+	    position: relative;
+	    top: 10px;
+	}
+		
+	#rain-graphs {
+	
+	    width: 100%;
+	    height: 100%;
+	    margin: 0 auto;
+	    /*border: 1px solid;
+	    border-color: #999;
+	    border-radius: 10px;*/
+	    text-align: center;
+	    
+	}
+	
+	#rain-graphs-content {top:10px; position: relative;}
+	
+    
+        /* Button Responsive Menu*/
+        .btn-responsive-menu{display: none;float: right;padding:5px;cursor:pointer;margin:  -15px 20px 0 0;color: #ffffff;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);background:#333;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+	.icon-bar 			{display: block;width: 18px;height: 2px;margin:5px;background-color: #f5f5f5;-webkit-border-radius: 1px;-moz-border-radius: 1px;border-radius: 1px;-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);}
+        
+        .show{display:block!important}
+
+        [class*='colonna-'] {
+            display: block;
+            float: left;
+            padding: 20px 20px;
+	    height: 100%;
+        }
+            
+        .colonna-1-3 {
+            width: 266.6px;
+        }
+            
+        .colonna-1-2 {
+            width: 480px;
+        }
+            
+        .colonna-1 {
+            width: 960px;
+        }
+        
+        @media (min-width: 1200px) {
+
+	/* Structure > 1200px */
+	#wrapper 		{width: 1170px;margin: 0 auto;}
+	#header 		{width: 1130px;float:left;padding: 20px 20px 20px 20px;} 
+	#mainmenu		{width: 100%;float:left;}
+	#main 			{width: 1130px;float:left;padding: 20px 20px 20px 20px;}
+	#content 		{width: 670px;float:left;}
+	#sidebar 		{width: 420px;float:right;}
+	#footer			{width: 1130px;float:left;padding: 30px 20px 10px 20px;}
+	#mainmenu		{display:block;}
+        .colonna-1-3 {
+            width: 336.6px;
+        }
+ 
+        }
+
+@media (min-width: 768px) and (max-width: 959px) {
+
+	/* Structure 768 to 1000 */
+	pre { font-size:13.5px; } 
+	#wrapper 		{width: 748px;margin: 0 auto;}
+	#header 		{width: 708px;float:left;padding: 20px 20px 20px 20px;} 
+	#mainmenu		{width: 100%;float:left;}
+	#main 			{width: 708px;float:left;padding: 20px 20px 20px 20px;}
+	#content 		{width: 768px;float:left;}
+	#sidebar 		{width: 210px;float:right;}
+	#footer			{width: 708px;float:left;padding: 30px 20px 10px 20px;}
+	#mainmenu		{display:block;}
+	
+        .colonna-1-3 {
+         width: 668px;
+        }
+         
+        .colonna-1-2 {
+         width: 384px;
+        }
+         
+        .colonna-1 {
+         width: 768px;
+        }
+    	
+	/* Header */
+	.btn-responsive-menu{display:block; margin:}
+	#menucentered		{width: 100%;float:left;}
+        #menucentered ul 	{margin: 0px 0 0px 0px;float:left;width:100%; list-style: none;}
+        #menucentered ul li 	{float: left;margin: 0 0px 0 0;position: relative; width: 100%;}
+        #menucentered a 	{color: #fff; display: block;font: 14px;padding: 14px 20px;font-family: oswald; text-transform:uppercase;}        
+        #menucentered           {display:none;}
+        
+	#menucentered ul li 	{float: none;}	
+    }
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+
+	/* Structure  < 767 */
+	body{padding:10px;/*background:#fff;*/}
+	pre { margin-left:8px; font-size:8.5px; } 
+	#wrapper 		{width:460px;margin: 0 auto;}
+	#header 		{width:100%;padding: 20px 0 20px 0px;} 
+	#mainmenu		{width:100%;float:left;}
+	#main 			{width:100%;float:left;padding: 20px 0 0 0;}
+	#content 		{width:100%;float:left;}
+	#sidebar 		{width:100%;float:right;padding: 20px 0 0 0px;}
+	#footer			{width:100%;float:left;padding: 20px 0 0 0px;}	
+
+	.btn-responsive-menu{display:block; margin:}
+	#menucentered		{width: 100%;float:left;}
+        #menucentered ul 	{margin: 0px 0 0px 0px;float:left;width:100%; list-style: none;}
+        #menucentered ul li 	{float: left;margin: 0 0px 0 0;position: relative; width: 100%;}
+        #menucentered a 	{color: #fff; display: block;font: 14px;padding: 14px 20px;font-family: oswald; text-transform:uppercase;}
+        
+        #menucentered           {display:none;}
+        
+	#menucentered ul li 	{float: none;}	
+        
+        .colonna-1, .colonna-1-2, .colonna-1-3 {
+            width: 420px;
+            margin:0;
+        }
+		
+    }
+
+@media only screen and (max-width:479px) {
+    pre { margin-left:8px; font-size:5.5px; } 
+	#wrapper 		{width:310px; margin: 0 auto;}
+	#header 		{width:100%;padding: 20px 0 20px 0px;} 
+	#mainmenu		{width:100%;float:left;}
+	#main 			{width:100%;float:left;padding: 20px 0 0 0;}
+	#content 		{width:100%;float:left;}
+        #footer			{width:100%;float:left;padding: 20px 0 0 0px;}
+
+        .colonna-1, .colonna-1-2, .colonna-1-3 {
+            width: 270px;
+             margin: 0;
+        }
+        
+	.btn-responsive-menu{display:block; margin:}
+	#menucentered		{width: 100%;float:left;}
+        #menucentered ul 	{margin: 0px 0 0px 0px;float:left;width:100%; list-style: none;}
+        #menucentered ul li 	{float: left;margin: 0 0px 0 0;position: relative; width: 100%;}
+        #menucentered a 	{color: #fff; display: block;font: 14px;padding: 14px 20px;font-family: oswald; text-transform:uppercase; text-decoration: none;}
+        
+        #menucentered           {display:none;}
+        
+	#menucentered ul li 	{float: none;}	
+	
+    }
